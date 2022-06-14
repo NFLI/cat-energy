@@ -1,6 +1,6 @@
-# Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url]
+# Личный проект «Кэт энерджи»
 
-* Студент: [Илья Андрущенко](https://up.htmlacademy.ru/adaptive/20/user/1487923).
+* Студент: [Илья Андрущенко ](https://up.htmlacademy.ru/adaptive/20/user/1487923).
 * Наставник: `Неизвестно`.
 
 ---
