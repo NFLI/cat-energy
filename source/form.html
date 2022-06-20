@@ -2,9 +2,9 @@
 <html class="page" lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
@@ -13,9 +13,9 @@
     <div class="container">
       <div class="page-header__wrapper">
         <a href="index.html" class="page-header__logo">
-          <img src="img/logo-mobile.svg" alt="Cat-Energy Logo" />
-          <svg width="101" height="18" viewBox="0 0 101 18" fill="none" xmlns="http://www.w3.org/2000/svg"
-            class="page-header__logo-text">
+          <img src="img/logo-mobile.svg" alt="Cat-Energy Logo" width="33" height="38" />
+          <svg class="page-header__logo-text" width="101" height="18" viewBox="0 0 101 18" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_135_3354)">
               <path
                 d="M1.26449 16.5385C0.36955 15.2762 -0.0747041 13.7627 1.02073e-05 12.2308V5.84615C-0.108365 4.29774 0.308071 2.75746 1.18546 1.46154C2.05478 0.461538 3.39829 0 5.37403 0C7.34978 0 8.61425 0.461538 9.40455 1.30769C10.2626 2.37941 10.6846 3.72136 10.59 5.07692V6.61539H6.71754V4.84615C6.74881 4.32289 6.66808 3.799 6.48045 3.30769C6.38016 3.10938 6.2212 2.9448 6.02403 2.83513C5.82686 2.72547 5.60049 2.67572 5.37403 2.69231C4.82082 2.69231 4.42568 2.84615 4.26762 3.23077C4.08883 3.77733 4.00862 4.34988 4.03053 4.92308V13.1538C3.98879 13.71 4.0978 14.267 4.34665 14.7692C4.5047 15.1538 4.89985 15.3077 5.45306 15.3077C6.00627 15.3077 6.32239 15.1538 6.48045 14.7692C6.66013 14.2494 6.74049 13.7019 6.71754 13.1538V11.3077H10.59V12.8462C10.6704 14.2238 10.2508 15.5852 9.40455 16.6923C8.61425 17.6154 7.27075 18.0769 5.37403 18.0769C3.47732 18 2.05478 17.5385 1.26449 16.5385Z"
@@ -68,58 +68,76 @@
           </ul>
         </nav>
       </div>
+    </div>
   </header>
   <main class="page-main">
-    <h1 class=" page-main__title">Подбор программы</h1>
-    <form action="https://echo.htmlacademy.ru" class="program-form" method="post">
+    <h1 class="page-main__title">Подбор программы</h1>
+    <form class="program-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="container program-form__wrapper">
         <fieldset class="form-section form-section--cat-info">
           <p class="cat-info__text">
-            Заполните анкету, и мы подберем
-            программу питания для вашего кота
+            Заполните анкету, и мы подберем программу питания для вашего кота
           </p>
           <div class="form-section__field">
-            <label for="cat-name" class="form-section__input-label" tabindex="0">Имя:*</label>
-            <input type="text" class="form-section__input" placeholder="Барсик" id="cat-name" name="cat-name">
+            <label class="form-section__item">
+              <span class="form-section__label-text">Имя:*</span>
+              <input class="form-section__input" type="text" placeholder="Барсик" name="cat-name" />
+            </label>
           </div>
           <div class="form-section__field">
-            <label for="cat-weight" class="form-section__input-label" tabindex="0">Вес (кг):*</label>
-            <input type="number" class="form-section__input" placeholder="7" id="cat-weight" name="cat-weight">
+            <label class="form-section__item">
+              <span class="form-section__label-text">Вес (кг):*</span>
+              <input class="form-section__input" type="number" placeholder="7" name="cat-weight" />
+            </label>
           </div>
           <div class="form-section__field">
-            <label for="cat-age" class="form-section__input-label" tabindex="0">Возраст (лет):*</label>
-            <input type="number" class="form-section__input" placeholder="7" id="cat-age" name="cat-age">
+            <label class="form-section__item">
+              <span class="form-section__label-text">Возраст (лет):*</span>
+              <input class="form-section__input" type="number" placeholder="7" name="cat-age"/>
+            </label>
           </div>
         </fieldset>
         <fieldset class="form-section form-section__choose-program">
           <ul class="choose-program__list">
             <li class="choose-program__item">
-              <input type="radio" class="visually-hidden form-section__radio" id="slim" name="program__radio" checked>
-              <label for="slim" class="form-section__radio-label" tabindex="0">Похудение</label>
+              <label class="form-section__item">
+                <input class="visually-hidden form-section__radio" type="radio" name="program__radio" checked/>
+                <span class="form-section__label-text form-section__label-text--radio">Похудение</span>
+              </label>
             </li>
             <li class="choose-program__item">
-              <input type="radio" class="visually-hidden form-section__radio" id="gain" name="program__radio">
-              <label for="gain" class="form-section__radio-label" tabindex="0">Набор массы</label>
+              <label class="form-section__item">
+                <input class="visually-hidden form-section__radio" type="radio" name="program__radio"/>
+                <span class="form-section__label-text form-section__label-text--radio">Набор массы</span>
+              </label>
             </li>
             <li class="choose-program__item">
-              <input type="radio" class="visually-hidden form-section__radio" id="advice" name="program__radio">
-              <label for="advice" class="form-section__radio-label" tabindex="0">Не знаю (Нужен ваш совет)</label>
+              <label class="form-section__item">
+                <input class="visually-hidden form-section__radio" type="radio" name="program__radio"/>
+                <span class="form-section__label-text form-section__label-text--radio">Не знаю (нужен ваш совет )</span>
+              </label>
             </li>
           </ul>
         </fieldset>
       </div>
       <fieldset class="form-section form-section--contacts">
-        <h3 class="form-section__title"><span>Контактные данные<br>(владельца кота)</span></h3>
+        <h3 class="form-section__title">
+          <span>Контактные данные<br />(владельца кота)</span>
+        </h3>
         <div class="container program-form__wrapper">
           <div class="form-section__field">
-            <label for="owner-email" class="form-section__input-label" tabindex="0">Email:*</label>
-            <input type="email" class="form-section__input" placeholder="kuklachev@gmail.com" id="owner-email"
-              name="owner-email">
+            <label class="form-section__item">
+              <span class="form-section__label-text">Email:*</span>
+              <input class="form-section__input" type="email" placeholder="kuklachev@gmail.com"
+              name="owner-email" />
+            </label>
           </div>
           <div class="form-section__field">
-            <label for="owner-tel" class="form-section__input-label" tabindex="0">Телефон:*</label>
-            <input type="tel" class="form-section__input" placeholder="8 (960) 900-60-90" id="owner-tel"
-              name="owner-tel">
+            <label class="form-section__item">
+              <span class="form-section__label-text">Телефон:*</span>
+              <input class="form-section__input" type="tel" placeholder="8 (960) 900-60-90"
+              name="owner-tel" />
+            </label>
           </div>
         </div>
       </fieldset>
@@ -137,28 +155,38 @@
         <div class="container">
           <ul class="choose-extra-list">
             <li class="choose-extra__item">
-              <input type="checkbox" class="visually-hidden form-section__checkbox" id="sugar" name="sugar" checked>
-              <label for="sugar" class="form-section__checkbox-label" tabindex="0">Сахарозаменитель</label>
+              <label class="form-section__item">
+                <input type="checkbox" class="visually-hidden form-section__checkbox" name="sugar"/>
+                <span class="form-section__label-text form-section__label-text--checkbox">Сахарозаменитель</span>
+              </label>
             </li>
             <li class="choose-extra__item">
-              <input type="checkbox" class="visually-hidden form-section__checkbox" id="water" name="water">
-              <label for="water" class="form-section__checkbox-label" tabindex="0">Питьевая вода</label>
+              <label class="form-section__item">
+                <input type="checkbox" class="visually-hidden form-section__checkbox" name="water"/>
+                <span class="form-section__label-text form-section__label-text--checkbox">Питьевая вода</span>
+              </label>
             </li>
             <li class="choose-extra__item">
-              <input type="checkbox" class="visually-hidden form-section__checkbox" id="milk" name="milk">
-              <label for="milk" class="form-section__checkbox-label" tabindex="0">Молоко</label>
+              <label class="form-section__item">
+                <input type="checkbox" class="visually-hidden form-section__checkbox" name="milk"/>
+                <span class="form-section__label-text form-section__label-text--checkbox">Молоко</span>
+              </label>
             </li>
             <li class="choose-extra__item">
-              <input type="checkbox" class="visually-hidden form-section__checkbox" id="vitamins" name="vitamins">
-              <label for="vitamins" class="form-section__checkbox-label" tabindex="0">Витамины</label>
+              <label class="form-section__item">
+                <input type="checkbox" class="visually-hidden form-section__checkbox" name="vitamins"/>
+                <span class="form-section__label-text form-section__label-text--checkbox">Витамины</span>
+              </label>
             </li>
           </ul>
         </div>
       </fieldset>
-      <section class="program-form__submit">
-        <button type="submit" class="btn program-form__submit-btn">Отправить заявку</button>
-        <p class="program-form__note">* — Обязательные поля</p>
-      </section>
+      <div class="program-form__submit">
+        <button type="submit" class="btn program-form__submit-btn">
+          Отправить заявку
+        </button>
+        <small class="program-form__note">* — Обязательные поля</small>
+      </div>
     </form>
   </main>
   <footer class="page-footer">
@@ -176,7 +204,7 @@
     <section class="page-footer__info page-footer__wrapper">
       <div class="page-footer__logo">
         <a href="#" class="page-footer__logo-link">
-          <img src="img/footer-logo__mobile.svg" alt="Cat-Energy Logo">
+          <img src="img/footer-logo__mobile.svg" alt="Cat-Energy Logo" width="128" height="24" />
         </a>
       </div>
       <div class="page-footer__social social">
