@@ -1,0 +1,8 @@
+.catalog-main {
+  margin-top: 41px;
+
+  @include tablet {
+    margin-top: 83px;
+  }
+}
+

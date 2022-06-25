@@ -1,0 +1,110 @@
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  min-width: 240px;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  color: #fff;
+  line-height: 20px;
+  background-color: #68b738;
+  font-weight: 400;
+  transition: 0.3s;
+
+  &:hover,
+  &:active {
+    background-color: $basic-green_2;
+  }
+
+  &:active {
+    background-color: $basic-green_2;
+    color:rgba(255, 255, 255, 0.3);
+  }
+
+  @include desktop {
+    min-width: 169px;
+  }
+
+  &--grey {
+    max-width: 480px;
+    min-width: 280px;
+    width: 100%;
+    color: $text-color;
+    background-color: $basic-grey;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: #EBEBEB;
+      color: $basic-green;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    @include tablet {
+      min-width: 248px;
+    }
+
+    @include desktop {
+      min-width: 169px;
+    }
+  }
+}
+
+.offer__btn {
+  min-height: 52px;
+  padding: 16px 25px;
+  font-size: 14px;
+  line-height: 18px;
+
+  @include mdmobile {
+    min-width: 100%;
+  }
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 0px;
+    min-width: 240px;
+  }
+}
+
+.catalog-item__btn {
+  max-width: 480px;
+  min-width: 280px;
+}
+
+.program-form__submit-btn {
+  max-width: 540px;
+  min-height: 52px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  text-align: center;
+  padding: 8px 45px;
+  text-transform: uppercase;
+  border: none;
+
+  @include tablet {
+    margin-left: 40px;
+    margin-right: 60px;
+    width: 285px;
+    padding: 18px 45px;
+    font-size: 20px;
+    line-height: 0px;
+  }
+
+  @include desktop {
+    margin-left: 0;
+    margin-right: 80px;
+    width: 570px;
+  }
+}
+

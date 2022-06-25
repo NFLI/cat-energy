@@ -1,0 +1,27 @@
+
+
+.page-footer__wrapper {
+  padding: 39px 0 22px 0;
+
+  @include tablet {
+    padding: 58px 0;
+  }
+
+}
+
+.page-footer__info {
+  background-color: #F2F2F2;
+}
+
+.page-footer__logo-link {
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+

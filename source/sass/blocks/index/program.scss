@@ -1,0 +1,64 @@
+.program {
+  padding-top: 25px;
+
+  @include tablet {
+    padding-top: 0;
+  }
+
+  @include desktop {
+    padding-top: 40px;
+  }
+}
+
+.program__card {
+  background-color: $basic-grey;
+  padding: 20px;
+  overflow: hidden;
+  margin: 20px 0;
+
+  @include tablet {
+    padding: 77px 62px 53px 52px;
+    margin: 30px 0;
+  }
+
+  @include desktop {
+    padding: 41px 51px 55px 52px;
+    margin: 40px;
+  }
+}
+
+.program__title {
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.program__description {
+  color: black;
+  padding: 20px 0;
+  border-bottom: 1px solid #D9D9D9;
+
+  @include tablet {
+    padding: 18px 0;
+    border-bottom: 0;
+  }
+}
+
+.program__link {
+  display: inline-block;
+  padding: 15px 0;
+  font-size: 16px;
+  line-height: 16px;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+

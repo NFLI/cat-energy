@@ -1,0 +1,35 @@
+.features {
+  padding-top: 10px;
+
+  @include tablet {
+    padding-top: 15px;
+  }
+
+  @include desktop {
+    padding-top: 32px;
+  }
+}
+
+.features__title {
+  margin-bottom: 38px;
+  font-size: 36px;
+  line-height: 40px;
+
+  @include tablet {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.features__list {
+  padding-left: 0;
+  padding-bottom: 47px;
+  @include tablet {
+    border-bottom: 1px solid #E6E6E6;
+  }
+
+  @include desktop {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+}

@@ -1,0 +1,61 @@
+.offer {
+  background-image: linear-gradient(to top,#fff 97px,transparent 97px),url(../../../img/index-background-mobile.png),linear-gradient(to top,#fff 197px,#61a63c 197px);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: #61a63c;
+  background-size: 100%;
+
+  @include tablet {
+    background: white;
+  }
+
+  @include desktop {
+    background: 0 0;
+  }
+}
+
+.offer__wrapper {
+  position: relative;
+  padding-bottom: 22px;
+  text-align: center;
+  color: #fff;
+
+  @include tablet {
+    text-align: left;
+    color: $black;
+  }
+}
+
+.offer__content {
+  @include tablet {
+    margin-left: 100px;
+  }
+}
+
+.offer__title {
+  width: 249px;
+  padding-top: 27px;
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 36px;
+
+  @include tablet {
+    padding-top: 0;
+    margin-bottom: 41px;
+    font-size: 60px;
+    line-height: 60px;
+    width: 585px;
+  }
+}
+
+.offer__text {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

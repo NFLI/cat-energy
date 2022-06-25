@@ -1,0 +1,47 @@
+
+
+// Переменные //
+
+@import "global/variables.scss";
+
+// Примеси //
+
+@import "global/mixins.scss";
+
+// Стандартные стили //
+
+@import "global/global-styles.scss";
+
+// Общие блоки //
+
+@import "blocks/common/page-header.scss";
+@import "blocks/common/main-nav.scss";
+@import "blocks/common/toggle.scss";
+@import "blocks/common/page-main__title.scss";
+@import "blocks/common/btn.scss";
+@import "blocks/common/page-footer.scss";
+@import "blocks/common/contacts.scss";
+@import "blocks/common/social.scss";
+@import "blocks/common/copyright.scss";
+
+// Главная страница //
+
+@import "blocks/index/offer.scss";
+@import "blocks/index/program.scss";
+@import "blocks/index/features.scss";
+@import "blocks/index/example.scss";
+
+// Каталог //
+
+@import "blocks/catalog/catalog-main.scss";
+@import "blocks/catalog/product.scss";
+@import "blocks/catalog/more-products.scss";
+@import "blocks/catalog/extra-goods.scss";
+@import "blocks/catalog/additional-promo.scss";
+
+// Форма //
+
+@import "blocks/form/program-form.scss";
+@import "blocks/form/form-section.scss";
+
+

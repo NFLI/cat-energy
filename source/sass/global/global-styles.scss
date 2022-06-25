@@ -1,0 +1,72 @@
+html,
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+::selection {
+  background-color: $basic-green;
+  color: #fff;
+}
+
+body, h1, h2, h3, h4, h5, html {
+  margin: 0;
+  font-weight: 400;
+}
+
+.text {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $text-color;
+
+  @include desktop {
+   font-size: 16px;
+  }
+}
+

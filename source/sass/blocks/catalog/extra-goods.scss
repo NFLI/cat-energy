@@ -1,0 +1,77 @@
+.extra-goods {
+  margin-top: 28px;
+
+  @include tablet {
+    margin-top: 68px;
+  }
+
+  @include desktop {
+    margin-top: 75px;
+  }
+}
+
+.extra-goods__heading {
+  font-size: 24px;
+  line-height: 24px;
+  background-image: linear-gradient(to bottom, transparent 0, transparent 13px, $basic-green 13px, $basic-green 16px, transparent 16px, transparent 100%);
+
+  & span {
+  display: inline-block;
+  padding: 0 20px;
+  background-color: #ffffff;
+  }
+
+  @include tablet {
+    font-size: 36px;
+    line-height: 36px;
+    background-image: linear-gradient(to bottom, transparent 0, transparent 22px, $basic-green 22px, $basic-green 25px, transparent 25px, transparent 100%);
+  }
+}
+
+.extra-goods__list {
+  padding-left: 0;
+  margin-top: 35px;
+
+  @include tablet {
+    margin-top: 80px;
+  }
+}
+
+.extra-goods__item {
+  padding: 13px 0;
+  border-bottom: 1px solid $special-grey;
+
+  &:first-child {
+    border-top: 1px solid $special-grey;
+  }
+
+  @include tablet {
+    padding: 26px 38px;
+    border: 1px solid $special-grey;
+  }
+
+  @include desktop {
+    padding: 15px 0;
+    border: none;
+    border-bottom: 1px solid $special-grey;
+  }
+}
+
+.extra-goods__title {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.extra-goods__info {
+  font-family: $arial;
+  font-size: 14px;
+  line-height: 14px;
+  color: $text-color;
+}
+

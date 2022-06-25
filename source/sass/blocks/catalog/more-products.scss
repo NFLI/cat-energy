@@ -1,0 +1,41 @@
+.catalog-main__item-more {
+  padding: 25px 0;
+  border-bottom: 1px solid $special-grey;
+
+  @include tablet {
+    background: none;
+    border-bottom: none;
+    border: 1px solid $special-grey;
+  }
+}
+
+.more-products__link-title {
+  font-size: 16px;
+  line-height: 20px;
+  color: #111;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  &:hover .more-products__title {
+    text-shadow: 2px -2px 17px #68b738;
+    transition: text-shadow .3s ease-in;
+  }
+}
+
+.more-products__text {
+  font-family: $arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $text-color;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+

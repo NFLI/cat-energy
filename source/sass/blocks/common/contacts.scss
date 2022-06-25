@@ -1,0 +1,33 @@
+.contacts {
+  position: relative;
+  background-color: #f2f2f2;
+
+  &--index {
+    background-color: white;
+  }
+}
+
+.contacts__slogan {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 21px;
+  }
+}
+
+.contacts__address {
+  font-family: $arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: right;
+  color: $text-color;
+
+  @include tablet {
+    font-size: 16px;
+  }
+}

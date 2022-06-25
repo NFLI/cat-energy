@@ -1,0 +1,11 @@
+.page-main__title {
+  margin-top: 27px;
+  font-size: 36px;
+  line-height: 36px;
+
+  @include tablet {
+    margin-top: 65px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
