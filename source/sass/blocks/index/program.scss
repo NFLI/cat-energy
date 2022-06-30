@@ -1,4 +1,7 @@
 .program {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
   padding-top: 25px;
 
   @include tablet {
@@ -10,24 +13,43 @@
   }
 }
 
+.program__wrapper {
+  @include desktop {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .program__card {
+  position: relative;
   background-color: $basic-grey;
-  padding: 20px;
+  padding: 24px 33px 24px 15px;
   overflow: hidden;
   margin: 20px 0;
 
   @include tablet {
-    padding: 77px 62px 53px 52px;
+    padding: 77px 280px 53px 52px;
     margin: 30px 0;
   }
 
   @include desktop {
     padding: 41px 51px 55px 52px;
     margin: 40px;
+    flex: 1 0 36%;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
 .program__title {
+  display: flex;
+  align-items: center;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
@@ -38,20 +60,53 @@
   }
 }
 
+.program__icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $basic-green;
+  margin-right: 19px;
+
+  @include tablet {
+    position: absolute;
+    right: 42px;
+    top: 65px;
+    width: 200px;
+    height: 200px;
+  }
+
+  @include desktop {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-right: 60px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
 .program__description {
   color: black;
   padding: 20px 0;
   border-bottom: 1px solid #D9D9D9;
+  min-width: 227px;
 
   @include tablet {
-    padding: 18px 0;
+    padding: 22px 0;
     border-bottom: 0;
   }
+
+  @include desktop {
+    padding-top: 40px;
+    padding-bottom: 25px;
+  }
+
 }
 
 .program__link {
   display: inline-block;
-  padding: 15px 0;
+  margin-top: 18px;
   font-size: 16px;
   line-height: 16px;
 

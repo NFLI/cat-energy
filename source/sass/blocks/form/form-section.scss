@@ -7,10 +7,13 @@
   text-transform: uppercase;
 
   @include tablet {
-    margin-top: 55px;
-    margin-bottom: 52px;
+    margin: 60px 0px 60px 40px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @include tablet {
+    margin: 60px auto;
   }
 }
 
@@ -23,14 +26,19 @@
 .form-section__field {
   margin: 13px 0;
   padding-left: 0;
-  max-width: 570px;
 
   @include tablet {
-    margin: 16px 0;
+    margin: 20px 0;
+    padding: 0px 40px;
+  }
+
+  @include tablet {
+    padding: 0;
   }
 }
 
 .form-section__item {
+  max-width: 100%;
   display: flex;
   align-items: center;
   min-height: 30px;
@@ -48,7 +56,7 @@
 
 .form-section__label-text {
   cursor: pointer;
-  margin-right: 15px;
+  margin: 0 10px 0 0;
 
   @include tablet {
     margin-right: 20px;
@@ -58,9 +66,9 @@
 .form-section__input {
   display: inline-block;
   padding: 15px;
-  min-width: 230px;
-  flex: 1 0 150px;
-  height: 52px;
+  min-width: 177px;
+  flex: 1 0 75px;
+  height: 45px;
   font-family: $oswald;
   font-size: 16px;
   line-height: 18px;
@@ -71,6 +79,10 @@
   transition: 0.3s;
 
   @include tablet {
+    flex: 1 0 150px;
+    height: 52px;
+    line-height: 1.5;
+    padding: 10px 20px;
     font-size: 20px;
     padding: 10px 0 10px 20px;
   }
@@ -89,13 +101,24 @@
 }
 
 .form-section__choose-program {
-  padding: 22px 0;
+  margin: 0 -20px;
+  margin-top: 18px;
+  padding: 22px 20px;
   border-top: 1px solid #E7E7E7;
   border-bottom: 1px solid #E7E7E7;
 
   @include tablet {
-    padding: 25px 0;
+    margin: 50px 40px 0px 40px;
+    padding: 28px;
     border: 1px solid #E7E7E7;
+  }
+
+  @include desktop {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
 
@@ -106,9 +129,32 @@
   list-style: none;
 }
 
+.choose-extra__list {
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(285px, 450px));
+    column-gap: 60px;
+    row-gap: 35px;
+    margin-left: 40px;
+  }
+
+  @include desktop {
+    display: grid;
+    grid-template-columns: repeat(4, 221px);
+    margin-left: 0;
+    column-gap: 104px;
+  }
+}
+
 .choose-program__item,
 .choose-extra__item {
   margin-bottom: 13px;
+}
+
+.choose-extra__item {
+  @include tablet {
+    margin-bottom: 0;
+  }
 }
 
 .choose-program__item:last-child {
@@ -219,6 +265,16 @@
   & span {
     display: inline-block;
     padding: 0 20px;
+
+    @include tablet {
+     margin-left: 50px;
+    }
+
+    @include desktop {
+      margin: 0 calc((100vw - 1300px)/2);
+      padding: 0 35px;
+    }
+
     background-color: #ffffff;
   }
 
@@ -227,6 +283,10 @@
     font-size: 36px;
     line-height: 36px;
     background-image: linear-gradient(to bottom, transparent 0, transparent 22px, $basic-green 22px, $basic-green 25px, transparent 25px, transparent 100%);
+
+    &--extra {
+      margin-bottom: 55px;
+    }
 
     & br {
       display: none;

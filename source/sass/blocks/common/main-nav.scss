@@ -1,8 +1,20 @@
 .main-nav__list {
+  display: none;
+  @include tablet {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  gap: 35px;
   padding: 0;
   margin: 0;
 }
 
+.main-nav__toggle {
+  @include tablet {
+    display: none;
+  }
+}
 
 .main-nav__link {
   display: inline-block;
@@ -34,5 +46,15 @@
   @include desktop {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .main-nav__list--index & {
+    @include desktop {
+      color: white;
+
+      &--active {
+        border-bottom-color: white;
+      }
+    }
   }
 }

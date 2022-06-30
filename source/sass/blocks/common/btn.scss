@@ -60,6 +60,7 @@
   padding: 16px 25px;
   font-size: 14px;
   line-height: 18px;
+  z-index: 2;
 
   @include mdmobile {
     min-width: 100%;
@@ -75,11 +76,22 @@
 .catalog-item__btn {
   max-width: 480px;
   min-width: 280px;
+  grid-column: 1/-1;
+  margin-top: 13px;
+
+  @include tablet {
+    min-width: 240px;
+    margin-top: 0;
+  }
+
+  @include desktop {
+    min-width: 168px;
+  }
 }
 
 .program-form__submit-btn {
-  max-width: 540px;
-  min-height: 52px;
+  max-width: 570px;
+  min-height: 40px;
   width: 100%;
   margin: 0 auto;
   font-family: $oswald;
@@ -93,16 +105,17 @@
   border: none;
 
   @include tablet {
+    height: 52px;
     margin-left: 40px;
     margin-right: 60px;
-    width: 285px;
+    width: 280px;
     padding: 18px 45px;
     font-size: 20px;
     line-height: 0px;
   }
 
   @include desktop {
-    margin-left: 0;
+    margin-left: 35px;
     margin-right: 80px;
     width: 570px;
   }

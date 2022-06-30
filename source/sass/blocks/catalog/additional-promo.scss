@@ -1,17 +1,4 @@
-.extra-goods {
-  margin-bottom: 35px;
-
-  @include tablet {
-    margin-bottom: 75px;
-  }
-
-  @include desktop {
-    margin-bottom: 85px;
-  }
-}
-
 .extra-goods__additional-promo {
-  position: relative;
   padding: 58px 61px 43px 58px;
   background-image: url("../../../img/gift-photo-mobile\ 1.png");
   background-repeat: no-repeat;
@@ -19,27 +6,52 @@
   background-size: cover;
 
   @include tablet {
-    padding: 58px 0px;
+    background-image: url("../../../img/gift-photo-mobile\ 1.png");
+    padding: 58px 124px 58px 78px;
   }
 
   @include desktop {
+    width: 245px;
     padding: 55px 42px 43px 41px;
-  }
-
-  &::before {
-    @include pseudo-element();
-    background-image: url("../../../img/icon_gift.svg");
-    background-repeat: no-repeat;
-    width: 240px;
-    height: 81px;
   }
 }
 
 .promotion__text {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  row-gap: 48px;
   font-family: $arial;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: white;
+
+  &::before {
+    content: '';
+    display: block;
+    background-image: url("../../../img/icon_gift.svg");
+    background-repeat: no-repeat;
+    width: 78px;
+    height: 80px;
+  }
+
+  @include tablet {
+    grid-template-columns: 80px 165px;
+    justify-content: space-between;
+    align-items: center;
+    width: 506px;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  @include desktop {
+    grid-template-columns: 1fr;
+    text-align: center;
+    row-gap: 46px;
+    width: auto;
+  }
 }

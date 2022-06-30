@@ -8,17 +8,32 @@
   }
 
   @include desktop {
-    background-color: #EAEAEA;
-    margin-top: 11px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-image: linear-gradient(#fff 0,#fff 200px,#f2f2f2 200px,#f2f2f2 100%);
+    margin-top: 13px;
   }
 }
 
 .example__wrapper {
-  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
 
   @include tablet {
-    padding-bottom: 75px;
+    
   }
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.example__content {
+  @include desktop {
+  max-width: 435px;
+  }
+
 }
 
 .example__title {
@@ -34,16 +49,43 @@
   }
 
   @include desktop {
-    background-color: white;
-    margin-top: 58px;
-    margin-bottom: 0;
+    margin-top: 30px;
     padding-bottom: 76px;
   }
 }
 
 .example__description {
+  padding-right: 8px;
+  margin-bottom: 25px;
+
+  @include tablet {
+    padding-right: 25px;
+    margin-bottom: 54px;
+  }
   @include desktop {
     margin: 70px 0 60px;
+  }
+}
+
+.example__data {
+  @include tablet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @include desktop {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.achievements {
+  display: flex;
+  justify-content: space-between;
+
+  @include tablet {
+  justify-content: flex-start;
   }
 }
 
@@ -51,17 +93,15 @@
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  padding-top: 15px;
-  padding-left: 22px;
-  padding-right: 25px;
-  border: 1px solid grey;
+  border: 1px solid $special-grey;
   border-radius: 3px;
+  margin: 0;
+  position: relative;
 
   @include tablet {
-    padding-top: 15px;
-    padding-left: 33px;
-    padding-right: 32px;
+    margin-right: 42px;
   }
 }
 
@@ -69,9 +109,12 @@
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  padding: 15px 20px 6px;
+  min-width: 121px;
 
   @include tablet {
+    min-width: 162px;
+    padding-bottom: 10px;
     font-size: 30px;
     line-height: 37px;
   }
@@ -79,7 +122,8 @@
 
 .achievement__title {
   position: relative;
-  bottom: -5px;
+  width: fit-content;
+  bottom: -6px;
   font-family: $arial;
   font-size: 12px;
   line-height: 1;
@@ -103,9 +147,11 @@
 
 .example__costs {
   margin-top: 25px;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
 
   @include tablet {
     display: flex;
@@ -125,7 +171,86 @@
 }
 
 .slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 42px;
+  padding-bottom: 34px;
   @include tablet {
-    background-color: #EAEAEA;
+    margin: 0 -30px;
+    background-image: linear-gradient(#fff 0,#fff 180px,#f2f2f2 180px,#f2f2f2 100%);
+    overflow: hidden;
+  }
+
+  @include desktop {
+    margin: 0;
+    background-image: linear-gradient(#fff 0,#fff 200px,#f2f2f2 200px,#f2f2f2 100%);
+    overflow: visible;
+  }
+}
+
+.slider__images {
+  position: relative;
+  margin: 0 -20px;
+  width: 320px;
+  height: 240px;
+
+  @include tablet {
+    margin: 60px 0 0;
+    width: 680px;
+    height: 517px;
+  }
+}
+
+.slider__image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+.slider__image-img {
+  max-width: inherit;
+
+  @include tablet {
+    width: 680px;
+    height: 517px;
+  }
+}
+
+.slider__actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 23px;
+  padding: 2px;
+  z-index: 1;
+
+  @include tablet {
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+
+  @include desktop {
+    margin-top: 35px;
+  }
+}
+
+.slider__btn {
+  font-size: 16px;
+  line-height: 20px;
+  color: black;
+  text-transform: uppercase;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.24);
+
+  @include tablet {
+    font-size: 24px;
+    line-height: 30px;
   }
 }

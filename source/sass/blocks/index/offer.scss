@@ -1,7 +1,7 @@
 .offer {
-  background-image: linear-gradient(to top,#fff 97px,transparent 97px),url(../../../img/index-background-mobile.png),linear-gradient(to top,#fff 197px,#61a63c 197px);
+  background-image: linear-gradient(to top, #fff 97px, transparent 97px), url(../../../img/index-background-mobile.png), linear-gradient(to top, #fff 210px, #61a63c 210px);
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: top;
   background-color: #61a63c;
   background-size: 100%;
 
@@ -16,11 +16,15 @@
 
 .offer__wrapper {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-bottom: 22px;
   text-align: center;
   color: #fff;
 
   @include tablet {
+    align-items: start;
     text-align: left;
     color: $black;
   }
@@ -33,7 +37,7 @@
 }
 
 .offer__title {
-  width: 249px;
+  width: 295px;
   padding-top: 27px;
   margin-bottom: 25px;
   font-weight: 500;
@@ -42,20 +46,49 @@
 
   @include tablet {
     padding-top: 0;
+    padding-top: 62px;
     margin-bottom: 41px;
     font-size: 60px;
     line-height: 60px;
     width: 585px;
   }
+
+  @include desktop {
+    padding-top: 105px;
+  }
 }
 
 .offer__text {
+  margin-top: 0;
+  margin-bottom: 32px;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
 
   @include tablet {
+    margin-bottom: 49px;
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+.offer__img {
+  margin: 0 auto;
+  width: 280px;
+  height: 270px;
+
+  @include tablet {
+    order: 2;
+    width: 709px;
+    height: 609px;
+  }
+
+  @include desktop {
+    top: 0;
+    left: 495px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    width: 552px;
+    height: 499px;
   }
 }

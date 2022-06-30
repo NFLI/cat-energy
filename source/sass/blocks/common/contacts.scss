@@ -7,27 +7,56 @@
   }
 }
 
+.contacts__text-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 29px 19px 22px;
+
+  @include desktop {
+    margin-bottom: 10px;
+    padding-left: 75px;
+    padding-right: 85px;
+    z-index: 1;
+    background-color: #fff;
+    max-width: 570px;
+  }
+}
+
+.contacts__item {
+  margin: 0;
+  flex-basis: 170px;
+}
+
 .contacts__slogan {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 25px;
   text-transform: uppercase;
 
   @include tablet {
     font-size: 20px;
-    line-height: 21px;
   }
 }
 
 .contacts__address {
+  display: flex;
+  flex-direction: column;
   font-family: $arial;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px;
-  text-align: right;
+  text-align: left;
   color: $text-color;
 
   @include tablet {
     font-size: 16px;
+    text-align: right;
   }
+}
+
+.contacts__city {
+  @include tablet {
+    margin-top: 18px;
+  }
+
 }

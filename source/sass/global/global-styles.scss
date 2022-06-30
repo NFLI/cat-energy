@@ -1,6 +1,7 @@
 html,
 body {
   min-width: 320px;
+  min-height: 100%;
   margin: 0;
   padding: 0;
   font-family: $oswald;
@@ -8,6 +9,11 @@ body {
   font-size: 16px;
   font-style: normal;
   line-height: 24px;
+  box-sizing: border-box;
+}
+
+.container, body, html {
+  min-width: 320px;
   box-sizing: border-box;
 }
 
@@ -53,6 +59,20 @@ table {
   color: #fff;
 }
 
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @include tablet {
+    padding: 0 30px;
+  }
+
+  @include desktop {
+    padding: 0 40px;
+    max-width: 1300px;
+  }
+}
+
 body, h1, h2, h3, h4, h5, html {
   margin: 0;
   font-weight: 400;
@@ -62,10 +82,10 @@ body, h1, h2, h3, h4, h5, html {
   margin: 0;
   font-family: "Arial", sans-serif;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.5;
   color: $text-color;
 
-  @include desktop {
+  @include tablet {
    font-size: 16px;
   }
 }

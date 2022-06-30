@@ -1,8 +1,28 @@
+.page-footer__social {
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+  width: 100%;
 
+  @include tablet {
+    width: 130px;
+    border: none;
+  }
+}
 
 .social__list {
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  padding: 20px 0;
+
+  @include tablet {
+    justify-content: flex-start;
+    gap: 25px;
+    padding: 0;
+  }
 }
 
 .social__item-icon--vk {

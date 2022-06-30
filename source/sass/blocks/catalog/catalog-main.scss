@@ -6,3 +6,24 @@
   }
 }
 
+.catalog-main__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @include tablet {
+    grid-template-columns: repeat(2, 324px);
+    gap: 60px;
+    justify-content: center;
+  }
+
+  @include desktop {
+    padding: 0 40px;
+    grid-template-columns: repeat(4, 245px);
+    column-gap: 80px;
+    row-gap: 65px;
+    margin: 0 auto;
+  }
+}
+

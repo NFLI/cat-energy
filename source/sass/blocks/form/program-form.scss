@@ -1,17 +1,29 @@
+.program-form__wrapper {
+  @include desktop {
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
+    column-gap: 80px;
+    align-items: center;
+  }
+}
+
 .program-form__submit {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 34px;
   margin-bottom: 32px;
+  padding: 0 20px;
 
   @include tablet {
     flex-direction: row;
     margin-top: 54px;
+    padding-left: 30px;
     margin-bottom: 72px;
   }
 
   @include desktop {
+    padding-left: calc((100vw - 1300px)/2);
     margin-bottom: 82px;
   }
 }

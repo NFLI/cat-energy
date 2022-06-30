@@ -1,33 +1,105 @@
 .catalog-main__item {
-  padding: 10px 0;
+  padding: 15px 20px;
   border-top: 1px solid #ededed;
 
   @include tablet {
+    padding: 10px 36px 40px 36px;
     border-top: none;
-    background-color: $basic-grey;
+    background-image: linear-gradient(180deg, #fff 87px, #f2f2f2 87px);
+  }
+
+  @include desktop {
+    width: 245px;
+  }
+}
+
+.catalog-main__item-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  max-width: 480px;
+  margin: 0 auto;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+  }
+
+  @include desktop {
+    gap: 0px;
+  }
+}
+
+.catalog-item__title {
+  width: 75px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222;
+
+  @include tablet {
+    margin-bottom: 20px;
+    width: 150px;
+    font-size: 20px;
+    text-align: center;
   }
 }
 
 .catalog-item__link {
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 138px;
+  flex: 1 0 auto;
 
   @include tablet {
-    font-size: 20px;
-    line-height: 24px;
+    height: 118px;
+    width: 100%;
+    align-items: flex-end;
+  }
+
+  @include desktop {
+    margin-bottom: 45px;
+  }
+}
+
+.product__img {
+  display: flex;
+  justify-content: center;
+  flex: 4 0 50%;
+  height: auto;
+}
+
+.catalog-item__description-wrapper {
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 251px;
+  }
+
+  @include desktop {
+    width: 173px;
+    margin-bottom: 33px;;
   }
 }
 
 .catalog-item__description-list {
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 0;
+
+  @include tablet {
+    margin-top: 0;
+    width: 100%;
+  }
 }
 
 .catalog-item__description-list__item {
   display: flex;
   align-items: center;
-  padding: 6px 0;
+  justify-content: space-between;
+  padding-bottom: 6px;
   font-family: $arial;
   font-weight: 400;
   font-size: 12px;
@@ -38,5 +110,17 @@
     font-size: 16px;
     line-height: 16px;
     border-bottom: 1px solid $special-grey;
+  }
+}
+
+.description-list__term {
+  @include desktop {
+    width: 240px;
+  }
+}
+
+.description-list__definition {
+  @include desktop {
+    width: 42px;
   }
 }

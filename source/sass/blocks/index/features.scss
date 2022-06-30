@@ -11,25 +11,80 @@
 }
 
 .features__title {
-  margin-bottom: 38px;
+  margin-bottom: 30px;
   font-size: 36px;
   line-height: 40px;
 
   @include tablet {
+    margin-bottom: 72px;
     font-size: 60px;
     line-height: 60px;
   }
 }
 
 .features__list {
+  display: grid;
+  row-gap: 20px;
   padding-left: 0;
   padding-bottom: 47px;
+
   @include tablet {
+    grid-template-columns: repeat(2, 34.6%);
+    column-gap: 140px;
+    row-gap: 37px;
     border-bottom: 1px solid #E6E6E6;
+    counter-reset: features-num;
   }
 
   @include desktop {
+    grid-template-columns: repeat(4, 245px);
+    column-gap: 80px;
     border-bottom: 0;
-    padding-bottom: 0;
+  }
+}
+
+.features__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+
+  &:first-child {
+    margin-top: 0px;
+  }
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+
+  &::before {
+    content: "";
+    flex-shrink: 0;
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+
+    @include tablet {
+      width: 80px;
+      height: 80px;
+      margin-right: 0;
+      margin-bottom: 32px;
+    }
+  }
+
+  @include tablet {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}
+
+.features__description {
+  @include tablet {
+    font-size: 16px;
   }
 }
