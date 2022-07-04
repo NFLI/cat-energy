@@ -4,6 +4,8 @@
   border-bottom: 1px solid $special-grey;
 
   @include tablet {
+    padding: 51px 38px 40px 38px;
+    margin-top: 71px;
     background: none;
     border-bottom: none;
     border: 1px solid $special-grey;
@@ -14,9 +16,51 @@
   margin-bottom: 22px;
 
   @include tablet {
-    margin-bottom: 87px;
+    margin-bottom: 100px;
   }
 }
+
+.more-products__link {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 19px;
+
+  @include tablet {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 39px;
+  }
+
+  &:hover .more-products__icon::before,
+  &:hover .more-products__icon::after {
+    background-color: #68b738;
+  }
+}
+
+.more-products__icon {
+  width: 100%;
+  height: 100%;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 2px;
+    background-color: #D3D3D3;
+    transition: 0.3s;
+  }
+
+  &::after {
+    transform: translate(-50%,-50%) rotate(90deg);
+  }
+}
+
 
 .more-products__link-title {
   font-size: 16px;
@@ -24,6 +68,7 @@
   color: #111;
 
   @include tablet {
+    width: 135px;
     font-size: 20px;
     line-height: 22px;
   }
@@ -31,6 +76,16 @@
   &:hover .more-products__title {
     text-shadow: 2px -2px 17px #68b738;
     transition: text-shadow .3s ease-in;
+  }
+}
+
+.more-products__title {
+  font-size: inherit;
+  line-height: inherit;
+
+  @include tablet {
+    width: 135px;
+    margin: 0 auto;
   }
 }
 
@@ -43,8 +98,11 @@
   color: $text-color;
 
   @include tablet {
+    width: 167px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 16px;
     line-height: 18px;
+    margin-top: 23px;
   }
 }
-

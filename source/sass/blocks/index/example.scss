@@ -1,6 +1,5 @@
 .example {
   background-color: #EAEAEA;
-  margin-top: calc(122px - 47px);
 
   @include tablet {
     background-color: white;
@@ -20,7 +19,7 @@
   flex-direction: column;
 
   @include tablet {
-    
+
   }
 
   @include desktop {

@@ -56,20 +56,19 @@
 }
 
 .offer__btn {
-  min-height: 52px;
-  padding: 16px 25px;
+  min-height: 40px;
+  padding: 7px 25px;
   font-size: 14px;
   line-height: 18px;
   z-index: 2;
-
-  @include mdmobile {
-    min-width: 100%;
-  }
+  min-width: 100%;
 
   @include tablet {
     font-size: 20px;
     line-height: 0px;
     min-width: 240px;
+    min-height: 54px;
+    padding: 14px 25px;
   }
 }
 
@@ -80,7 +79,7 @@
   margin-top: 13px;
 
   @include tablet {
-    min-width: 240px;
+    min-width: 248px;
     margin-top: 0;
   }
 

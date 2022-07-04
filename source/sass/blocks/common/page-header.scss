@@ -6,6 +6,10 @@
     border-bottom: none;
   }
 
+  .main-nav--opened & {
+    border-bottom: none;
+  }
+
   @include tablet {
     border-bottom: none;
   }
@@ -26,6 +30,7 @@
         background-image: url(../../../img/index-background-desktop.png);
         background-repeat: no-repeat;
         background-size: cover;
+        height: 697px;
         background-position: right center;
         z-index: -1;
       }
@@ -34,12 +39,10 @@
 }
 
 .page-header__wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
   @include tablet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 20px
   }
@@ -51,6 +54,7 @@
 }
 
 .page-header__logo {
+  position: relative;
   display: flex;
   align-items: center;
   padding-top: 10px;

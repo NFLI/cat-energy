@@ -11,12 +11,12 @@
 }
 
 .features__title {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   font-size: 36px;
   line-height: 40px;
 
   @include tablet {
-    margin-bottom: 72px;
+    margin-bottom: 32px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -27,6 +27,7 @@
   row-gap: 20px;
   padding-left: 0;
   padding-bottom: 47px;
+  margin: 0;
 
   @include tablet {
     grid-template-columns: repeat(2, 34.6%);
@@ -48,6 +49,9 @@
   display: flex;
   align-items: center;
   min-height: 60px;
+  margin-top: 0;
+  counter-increment: feature_num;
+  z-index: 0;
 
   &:first-child {
     margin-top: 0px;
@@ -76,11 +80,42 @@
     }
   }
 
+  &--icon-leaf::before {
+    background-image: url(../../../img/icon_leaf.svg);
+    background-size: 30px 32px;
+  }
+
+  &--icon-powder::before {
+    background-image: url(../../../img/icon_tub.svg);
+    background-size: 28px 31px;
+  }
+
+  &--icon-cutlery::before {
+    background-image: url(../../../img/icon_eat.svg);
+    background-size: 25px 30px;
+  }
+
+  &--icon-clock::before {
+    background-image: url(../../../img/icon_alarm.svg);
+    background-size: 32px 33px;
+  }
+
   @include tablet {
     flex-direction: column;
     align-items: flex-start;
-  }
+    padding-bottom: 60px;
+    padding-top: 40px;
 
+    &::after {
+      content: counter(feature_num);
+      position: absolute;
+      left: 119px;
+      top: 132px;
+      font-size: 280px;
+      color: #f2f2f2;
+      z-index: -1;
+    }
+  }
 }
 
 .features__description {

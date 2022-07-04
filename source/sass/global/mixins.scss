@@ -5,7 +5,7 @@
 }
 
 @mixin mdmobile {
-  @media (min-width: $mobile-width) {
+  @media (max-width: $mobile-only) {
     @content;
   }
 }

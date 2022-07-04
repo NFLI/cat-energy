@@ -109,7 +109,7 @@
   }
 
   @include desktop {
-
+    gap: 0px;
   }
 }
 
@@ -125,6 +125,12 @@
 
   @include desktop {
     width: 284px;
+  }
+}
+
+.extra-goods__size {
+  @include desktop {
+    width: 245px;
   }
 }
 

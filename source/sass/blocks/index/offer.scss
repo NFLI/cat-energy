@@ -11,6 +11,7 @@
 
   @include desktop {
     background: 0 0;
+    min-height: 560px;
   }
 }
 
@@ -32,7 +33,7 @@
 
 .offer__content {
   @include tablet {
-    margin-left: 100px;
+    margin-left: 110px;
   }
 }
 
@@ -84,11 +85,10 @@
   }
 
   @include desktop {
-    top: 0;
-    left: 495px;
-    margin-top: 5px;
-    margin-bottom: 50px;
+    position: absolute;
+    z-index: -1;
+    left: 475px;
     width: 552px;
-    height: 499px;
+    height: auto;
   }
 }

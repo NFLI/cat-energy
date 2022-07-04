@@ -23,7 +23,7 @@
 .program__card {
   position: relative;
   background-color: $basic-grey;
-  padding: 24px 33px 24px 15px;
+  padding: 24px 33px 24px 20px;
   overflow: hidden;
   margin: 20px 0;
 
@@ -70,8 +70,9 @@
 
   @include tablet {
     position: absolute;
-    right: 42px;
-    top: 65px;
+    right: 53px;
+    top: 80px;
+    margin-right: 0;
     width: 200px;
     height: 200px;
   }
@@ -83,6 +84,49 @@
     margin-right: 60px;
     width: 100px;
     height: 100px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &--slim::after {
+    width: 72%;
+    height: 100%;
+    background-image: url(../../../img/cat-slim.svg);
+    background-size: 36px;
+    background-repeat: no-repeat;
+
+    @include tablet {
+      width: 70%;
+      height: 96%;
+      background-size: 140px;
+      top: 42%;
+    }
+
+    @include desktop {
+      background-size: 70px;
+    }
+  }
+
+  &--gain::after {
+    width: 134%;
+    height: 100%;
+    background-image: url(../../../img/gain-cat.svg);
+    background-size: 67px;
+    background-repeat: no-repeat;
+
+    @include tablet {
+      background-size: 268px;
+    }
+
+    @include desktop {
+      background-size: 134px;
+    }
   }
 }
 
@@ -105,6 +149,7 @@
 }
 
 .program__link {
+  position: relative;
   display: inline-block;
   margin-top: 18px;
   font-size: 16px;
@@ -114,6 +159,37 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -38px;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 11px;
+    background-image: url(../../../img/icon-arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: background-image 0.1s linear;
+
+    @include tablet {
+      right: -48px;
+    }
+  }
+
+  &:hover::after {
+    right: -57px;
+    background-image: url(../../../img/hover-arrow.svg);
+    width: 32px;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
 }
-
-
