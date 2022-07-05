@@ -1,9 +1,13 @@
 .offer {
-  background-image: linear-gradient(to top, #fff 97px, transparent 97px), url(../../../img/index-background-mobile.png), linear-gradient(to top, #fff 210px, #61a63c 210px);
+  background-image: linear-gradient(to top, #fff 97px, transparent 97px), url(../../../img/raster/index-background-mobile@1x.jpg), linear-gradient(to top, #fff 210px, #61a63c 210px);
   background-repeat: no-repeat;
   background-position: top;
   background-color: #61a63c;
   background-size: 100%;
+
+  @include retina {
+    background-image: linear-gradient(to top,#fff 97px,transparent 97px),url(../../../img/raster/index-background-mobile@2x.jpg),linear-gradient(to top,#fff 210px,#61a63c 210px);
+  }
 
   @include tablet {
     background: white;
@@ -47,7 +51,7 @@
 
   @include tablet {
     padding-top: 0;
-    padding-top: 62px;
+    padding-top: 42px;
     margin-bottom: 41px;
     font-size: 60px;
     line-height: 60px;
@@ -55,7 +59,7 @@
   }
 
   @include desktop {
-    padding-top: 105px;
+    padding-top: 90px;
   }
 }
 
@@ -73,6 +77,20 @@
   }
 }
 
+.offer__image-wrapper {
+  @include tablet {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  order: 2;
+  margin-top: -80px;
+  }
+
+  @include desktop {
+    margin-top: 0;
+  }
+}
+
 .offer__img {
   margin: 0 auto;
   width: 280px;
@@ -87,7 +105,10 @@
   @include desktop {
     position: absolute;
     z-index: -1;
-    left: 475px;
+    left: 455px;
+    top: 0px;
+    margin-top: 5px;
+    margin-bottom: 50px;
     width: 552px;
     height: auto;
   }

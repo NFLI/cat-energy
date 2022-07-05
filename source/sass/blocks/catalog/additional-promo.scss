@@ -1,18 +1,31 @@
 .extra-goods__additional-promo {
   padding: 58px 61px 43px 58px;
-  background-image: url("../../../img/gift-photo-mobile\ 1.png");
+  background-image: url("../../../img/raster/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
+  @include retina {
+    background-image: url("../../../img/raster/gift-photo-mobile@2x.jpg");
+  }
+
   @include tablet {
-    background-image: url("../../../img/gift-photo-mobile\ 1.png");
+    background-image: url("../../../img/raster/gift-photo-tablet@1x.jpg");
     padding: 58px 124px 58px 78px;
+
+    @include retina {
+      background-image: url("../../../img/raster/gift-photo-tablet@2x.jpg");
+    }
   }
 
   @include desktop {
     width: 245px;
     padding: 55px 42px 43px 41px;
+    background-image: url("../../../img/raster/gift-photo-desktop@2x.jpg");
+
+    @include retina {
+      background-image: url("../../../img/raster/gift-photo-desktop@2x.jpg");
+    }
   }
 }
 

@@ -54,23 +54,24 @@
   height: 138px;
   flex: 1 0 auto;
 
+
   @include tablet {
+    &>picture img {
+      width: 100%;
+      height: auto;
+    }
     align-items: flex-end;
-    width: 248px;
+    width: 324px;
     height: 196px;
   }
 
   @include desktop {
     margin-bottom: 45px;
+    width: 245px;
   }
+
 }
 
-.product__img {
-  display: flex;
-  justify-content: center;
-  flex: 4 0 50%;
-  height: auto;
-}
 
 .catalog-item__description-wrapper {
   @include tablet {

@@ -28,3 +28,8 @@
   }
 }
 
+@mixin retina {
+  @media (min-resolution: $retina-resolution) {
+    @content;
+  }
+}
