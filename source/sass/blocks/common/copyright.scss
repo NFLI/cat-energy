@@ -1,5 +1,5 @@
 .page-footer__copyright {
-  padding-top: 22px;
+  padding-top: 18px;
   width: 100%;
 
   @include tablet {
@@ -21,16 +21,18 @@
   @include tablet {
     justify-content: start;
   }
+
+  &:hover .academy-icon {
+    fill: $basic-green;
+    transition: 0.3s;
+  }
 }
 
 .academy-icon {
+  fill: #666666;
   @include tablet {
     margin-left: 22px;
   }
 }
 
-.academy-icon:hover path {
-  fill: $basic-green;
-  transition: 0.3s;
-}
 

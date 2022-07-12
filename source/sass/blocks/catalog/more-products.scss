@@ -1,5 +1,5 @@
 .catalog-main__item-more {
-  padding: 25px 20px;
+  padding: 26px 20px 24px 20px;
   text-align: center;
   border-bottom: 1px solid $special-grey;
 
@@ -13,10 +13,10 @@
 }
 
 .more-products {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 
   @include tablet {
-    margin-bottom: 100px;
+    margin-bottom: 87px;
   }
 }
 
@@ -30,7 +30,7 @@
   @include tablet {
     width: 60px;
     height: 60px;
-    margin-bottom: 39px;
+    margin-bottom: 43px;
   }
 
   &:hover .more-products__icon::before,
@@ -93,6 +93,7 @@
   font-family: $arial;
   font-style: normal;
   font-weight: 400;
+  margin-top: 8px;
   font-size: 12px;
   line-height: 16px;
   color: $text-color;

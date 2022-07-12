@@ -1,8 +1,14 @@
 .catalog-main__item {
-  padding: 15px 20px;
+  padding: 14px 20px;
   border-top: 1px solid #ededed;
+  margin-top: 10px;
+
+  &:first-child {
+    margin-top: 0;
+  }
 
   @include tablet {
+    margin-top: 0;
     padding: 0px 36px 40px 36px;
     border-top: none;
     background-image: linear-gradient(180deg,#fff 70px,#f2f2f2 70px);
@@ -37,12 +43,14 @@
   width: 75px;
   font-size: 16px;
   line-height: 20px;
+  margin-bottom: 12px;
   color: #222;
 
   @include tablet {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     width: 150px;
     font-size: 20px;
+    line-height: 1.2;
     text-align: center;
   }
 }
@@ -51,8 +59,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 138px;
+  height: 118px;
   flex: 1 0 auto;
+
+  &>picture img {
+    display: block;
+  }
 
 
   @include tablet {
@@ -66,7 +78,7 @@
   }
 
   @include desktop {
-    margin-bottom: 45px;
+    margin-bottom: 35px;
     width: 245px;
   }
 
@@ -83,12 +95,13 @@
 
   @include desktop {
     width: 173px;
-    margin-bottom: 33px;;
+    margin-bottom: 35px;
   }
 }
 
 .catalog-item__description-list {
-  margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 5px;
 
   @include tablet {
     margin-top: 0;
@@ -100,17 +113,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 6px;
   font-family: $arial;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
 
   @include tablet {
-    padding: 9px 0;
+    padding: 7px 3px 8px 2px;
     font-size: 16px;
     line-height: 16px;
     border-bottom: 1px solid $special-grey;
+
+    &:first-child {
+      padding-top: 8px;
+    }
   }
 }
 

@@ -24,16 +24,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 29px 19px 22px;
-
+  padding: 28px 20px 25px;
   @include tablet {
-    padding: 60px 70px 52px;
+    padding: 65px 70px 52px;
   }
 
   @include desktop {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     padding-left: 75px;
-    padding-right: 85px;
+    padding-right: 74px;
+    padding-top: 61px;
     z-index: 1;
     background-color: #fff;
     max-width: 570px;
@@ -47,7 +47,7 @@
 
 .contacts__slogan {
   font-size: 16px;
-  line-height: 25px;
+  line-height: 1.17;
   text-transform: uppercase;
 
   @include tablet {
@@ -64,6 +64,7 @@
   font-size: 14px;
   text-align: left;
   color: $text-color;
+  line-height: 1.43;
 
   @include tablet {
     font-size: 16px;
@@ -106,7 +107,7 @@
   }
 
   @include desktop {
-    height: 500px;
+    height: 400px;
     background-image: url("../../../img/raster/map-pin.png"), url("../../../img/raster/bg-map-desktop@1x.png");
     background-position: calc(71.1% + (100vw - 100%) / 2) 51%, center;
 

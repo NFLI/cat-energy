@@ -15,7 +15,7 @@
 
   @include desktop {
     background: 0 0;
-    min-height: 560px;
+    min-height: 557px;
   }
 }
 
@@ -24,7 +24,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 22px;
   text-align: center;
   color: #fff;
 
@@ -37,29 +36,33 @@
 
 .offer__content {
   @include tablet {
-    margin-left: 110px;
+    margin-left: 87px;
+  }
+
+  @include desktop {
+    margin-left: 80px;
   }
 }
 
 .offer__title {
   width: 295px;
   padding-top: 27px;
-  margin-bottom: 25px;
-  font-weight: 500;
+  margin-bottom: 23px;
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
 
   @include tablet {
     padding-top: 0;
-    padding-top: 42px;
+    padding-top: 34px;
     margin-bottom: 41px;
     font-size: 60px;
     line-height: 60px;
-    width: 585px;
+    width: 415px;
   }
 
   @include desktop {
-    padding-top: 90px;
+    padding-top: 83px;
   }
 }
 
@@ -75,6 +78,10 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @include desktop {
+    margin-bottom: 53px;
+  }
 }
 
 .offer__image-wrapper {
@@ -83,7 +90,7 @@
   justify-content: center;
   width: auto;
   order: 2;
-  margin-top: -80px;
+  margin-top: -82px;
   }
 
   @include desktop {
@@ -92,6 +99,7 @@
 }
 
 .offer__img {
+  display: block;
   margin: 0 auto;
   width: 280px;
   height: 270px;
@@ -105,8 +113,8 @@
   @include desktop {
     position: absolute;
     z-index: -1;
-    left: 455px;
-    top: 0px;
+    left: 447px;
+    top: -2px;
     margin-top: 5px;
     margin-bottom: 50px;
     width: 552px;

@@ -1,14 +1,11 @@
 .page-header {
   position: relative;
-  border-bottom: 1px solid #D9D9D9;
+  border-bottom: 1px solid #E6E6E6;
 
   &--index {
     border-bottom: none;
   }
 
-  .main-nav--opened & {
-    border-bottom: none;
-  }
 
   @include tablet {
     border-bottom: none;
@@ -30,7 +27,7 @@
         background-image: url(../../../img/raster/index-background-desktop@1x.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 697px;
+        height: 695px;
         background-position: right center;
         z-index: -1;
 
@@ -83,7 +80,7 @@
 
   @include tablet {
     width: 174px;
-    height: 59px;
+    height: 53px;
   }
 
   @include desktop {

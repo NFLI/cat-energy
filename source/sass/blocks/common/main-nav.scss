@@ -43,6 +43,10 @@
     &:first-child {
       border-top: 1px solid #E6E6E6;
     }
+
+    &:last-child {
+      border-bottom: none;
+    }
   }
 
   @include tablet {
@@ -53,10 +57,11 @@
 .main-nav__link {
   position: relative;
   display: inline-block;
-  padding: 22px 0;
+  padding-top: 22px;
+  padding-bottom: 24px;
   vertical-align: middle;
   font-weight: 500;
-  line-height: 25px;
+  line-height: 20px;
   font-size: 20px;
   text-align: center;
   transition: 0.3s;
@@ -77,12 +82,13 @@
 
   @include tablet {
     font-weight: 400;
-    padding: 8px 0;
+    padding: 10px 0;
     font-size: 18px;
     line-height: 24px;
   }
 
   @include desktop {
+    padding: 8px 0;
     font-size: 20px;
     line-height: 30px;
   }

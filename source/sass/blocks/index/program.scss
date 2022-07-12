@@ -1,11 +1,12 @@
 .program {
   padding: 0;
+  margin-top: 22px;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 25px;
 
   @include tablet {
     padding-top: 0;
+    margin-top: 0;
   }
 
   @include desktop {
@@ -23,26 +24,53 @@
 .program__card {
   position: relative;
   background-color: $basic-grey;
-  padding: 24px 33px 24px 20px;
   overflow: hidden;
-  margin: 20px 0;
+  margin-bottom: 24px;
+  padding: 24px 20px 19px 19px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
 
   @include tablet {
-    padding: 77px 280px 53px 52px;
+    padding: 79px 279px 59px 52px;
     margin: 30px 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   @include desktop {
-    padding: 41px 51px 55px 52px;
+    padding: 49px 51px 58px 50px;
     margin: 40px;
     flex: 1 0 36%;
 
     &:first-child {
+      margin-top: 40px;
       margin-left: 0;
     }
 
     &:last-child {
+      margin-bottom: 40px;
       margin-right: 0;
+    }
+  }
+
+  &--gain {
+    padding: 25px 20px 18px 25px;
+
+    @include tablet {
+      padding: 79px 315px 59px 52px;
+    }
+
+    @include desktop {
+      padding: 48px 61px 59px 51px;
     }
   }
 }
@@ -66,12 +94,13 @@
   height: 50px;
   border-radius: 50%;
   background-color: $basic-green;
-  margin-right: 19px;
+  margin-right: 20px;
+  margin-left: 3px;
 
   @include tablet {
     position: absolute;
-    right: 53px;
-    top: 80px;
+    right: 61px;
+    top: 93px;
     margin-right: 0;
     width: 200px;
     height: 200px;
@@ -97,7 +126,7 @@
   &--slim::after {
     width: 72%;
     height: 100%;
-    background-image: url(../../../img/cat-slim.svg);
+    background-image: url(../../../img/vector/icon-cat-slim.svg);
     background-size: 36px;
     background-repeat: no-repeat;
 
@@ -115,8 +144,8 @@
 
   &--gain::after {
     width: 134%;
-    height: 100%;
-    background-image: url(../../../img/gain-cat.svg);
+    height: 56%;
+    background-image: url(../../../img/vector/icon-cat-pro.svg);
     background-size: 67px;
     background-repeat: no-repeat;
 
@@ -132,13 +161,17 @@
 
 .program__description {
   color: black;
-  padding: 20px 0;
+  line-height: 1.31;
+  padding-top: 22px;
+  padding-bottom: 20px;
   border-bottom: 1px solid #D9D9D9;
   min-width: 227px;
 
   @include tablet {
-    padding: 22px 0;
+    padding-top: 24px;
+    padding-bottom: 48px;
     border-bottom: 0;
+    line-height: 1.5;
   }
 
   @include desktop {
@@ -156,6 +189,7 @@
   line-height: 16px;
 
   @include tablet {
+    margin-top: 0;
     font-size: 20px;
     line-height: 30px;
   }
@@ -168,11 +202,11 @@
     content: "";
     position: absolute;
     top: 50%;
-    right: -38px;
+    right: -41px;
     transform: translateY(-50%);
     width: 24px;
     height: 11px;
-    background-image: url(../../../img/icon-arrow.svg);
+    background-image: url(../../../img/vector/icon-arrow.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -180,12 +214,13 @@
 
     @include tablet {
       right: -48px;
+      top: 52%;
     }
   }
 
   &:hover::after {
     right: -57px;
-    background-image: url(../../../img/hover-arrow.svg);
+    background-image: url(../../../img/vector/icon-hover-arrow.svg);
     width: 32px;
   }
 

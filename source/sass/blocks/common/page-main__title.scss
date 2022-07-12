@@ -4,8 +4,12 @@
   line-height: 36px;
 
   @include tablet {
-    margin-top: 65px;
+    margin-top: 37px;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @include desktop {
+    margin-top: 48px;
   }
 }

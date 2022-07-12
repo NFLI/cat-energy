@@ -20,9 +20,14 @@
 
   @include tablet {
     justify-content: flex-start;
-    gap: 25px;
+    gap: 27px;
     padding: 0;
   }
+}
+
+.social__item-link svg {
+  fill: #666;
+  transition: fill 0.3s;
 }
 
 .social__item-icon--vk {
@@ -31,7 +36,7 @@
 
   @include tablet {
     width: 30px;
-    height: 22px;
+    height: 17px;
   }
 }
 
@@ -50,23 +55,15 @@
   height: 22px;
 
   @include tablet {
-    width: 28px;
-    height: 28px;
+    width: 14px;
+    height: 27px;
   }
 }
 
-.social__item-link:focus .social__item-icon path,
-.social__item-link:hover .social__item-icon path {
-  transition: 0.3s;
+.social__item-link:hover svg {
   fill: #68b738;
 }
 
-.social-item-link:active .social__item-icon {
+.social__item-link:active {
   opacity: 0.3;
-}
-
-.social__item-link:focus .social__item-icon--fb path,
-.social__item-link:hover .social__item-icon--fb path {
-  fill: none;
-  stroke: #68b738;
 }

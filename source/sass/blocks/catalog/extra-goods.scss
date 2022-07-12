@@ -1,14 +1,14 @@
 .extra-goods {
-  margin-top: 28px;
+  margin-top: 29px;
   margin-bottom: 35px;
 
   @include tablet {
-    margin-top: 68px;
+    margin-top: 72px;
     margin-bottom: 75px;
   }
 
   @include desktop {
-    margin-top: 75px;
+    margin-top: 74px;
     margin-bottom: 85px;
   }
 }
@@ -16,10 +16,10 @@
 .extra-goods__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 39px;
 
   @include tablet {
-    gap: 60px;
+    gap: 68px;
   }
 
   @include desktop {
@@ -34,7 +34,7 @@
   font-size: 24px;
   line-height: 24px;
   background-image: linear-gradient(to bottom, transparent 0, transparent 13px, $basic-green 13px, $basic-green 16px, transparent 16px, transparent 100%);
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 
   & span {
   display: inline-block;
@@ -43,10 +43,12 @@
 
   @include tablet {
     margin-left: 30px;
+    padding: 0 36px;
   }
 
   @include desktop {
-    padding: 0 35px;
+    padding-left: 40px;
+    padding-right: 35px;
     margin: 0 calc((100vw - 1300px)/2);
   }
   }
@@ -55,7 +57,11 @@
     font-size: 36px;
     line-height: 36px;
     background-image: linear-gradient(to bottom, transparent 0, transparent 22px, $basic-green 22px, $basic-green 25px, transparent 25px, transparent 100%);
-    margin-bottom:  80px;
+    margin-bottom:  79px;
+  }
+
+  @include desktop {
+    margin-bottom: 80px;
   }
 }
 
@@ -67,7 +73,8 @@
 .extra-goods__item {
   display: flex;
   flex-direction: column;
-  padding: 13px 0;
+  padding-top: 13px;
+  padding-bottom: 17px;
   border-bottom: 1px solid $special-grey;
 
   &:first-child {
@@ -78,7 +85,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 26px 38px;
+    padding: 27px 37px;
     border-left: 1px solid $special-grey;
     border-right: 1px solid $special-grey;
   }
@@ -86,7 +93,8 @@
   @include desktop {
     width: 895px;
     align-items: center;
-    padding: 15px 0;
+    padding: 16px 0;
+    padding-bottom: 15px;
     border: none;
     border-bottom: 1px solid $special-grey;
   }
@@ -96,7 +104,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 15px 0;
+  margin: 14px 0;
   font-family: $arial;
   font-size: 14px;
   line-height: 14px;
@@ -104,7 +112,8 @@
 
   @include tablet {
     margin: 0;
-    gap: 55px;
+    margin-top: 5px;
+    gap: 50px;
     font-size: 16px;
   }
 
@@ -138,12 +147,15 @@
   flex: 1 0 100%;
 
   @include tablet {
-    margin-top: 25px;
+    margin-top: 26px;
+    min-height: 38px;
+    padding: 9px 0;
   }
 
   @include desktop {
-    flex: 0 0 245px;
-    min-width: 245px;
+    flex: 0 0 244px;
+    min-width: 244px;
+    min-height: 40px;
     margin-top: 0;
   }
 }

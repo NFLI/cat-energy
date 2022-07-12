@@ -1,7 +1,7 @@
 {
   "name": "cat-energy-25",
   "private": false,
-  "description": "Личный проект «Пинк» от HTML Academy",
+  "description": "Личный проект «Cat-Energy» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.4.0",
@@ -10,6 +10,7 @@
     "gulp": "4.0.2",
     "gulp-dart-sass": "^1.0.2",
     "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "7.1.0",
     "gulp-libsquoosh": "^1.1.2",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.1",
@@ -17,6 +18,7 @@
     "gulp-svgmin": "^4.1.0",
     "gulp-svgstore": "^9.0.0",
     "gulp-terser": "^2.1.0",
+    "gulp-webp": "4.0.1",
     "postcss": "8.3.11",
     "postcss-csso": "^6.0.0",
     "stylelint": "13.13.1",

@@ -1,8 +1,12 @@
 .catalog-main {
-  margin-top: 41px;
+  margin-top: 37px;
 
   @include tablet {
-    margin-top: 83px;
+    margin-top: 93px;
+  }
+
+  @include desktop {
+    margin-top: 97px;
   }
 }
 
@@ -14,7 +18,8 @@
 
   @include tablet {
     grid-template-columns: repeat(2, 324px);
-    gap: 60px;
+    column-gap: 60px;
+    row-gap: 69px;
     justify-content: center;
   }
 
@@ -22,7 +27,7 @@
     padding: 0 40px;
     grid-template-columns: repeat(4, 245px);
     column-gap: 80px;
-    row-gap: 65px;
+    row-gap: 74px;
     margin: 0 auto;
   }
 }
