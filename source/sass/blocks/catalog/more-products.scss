@@ -45,19 +45,19 @@
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
     height: 2px;
-    background-color: #D3D3D3;
+    background-color: #d3d3d3;
     transition: 0.3s;
   }
 
   &::after {
-    transform: translate(-50%,-50%) rotate(90deg);
+    transform: translate(-50%, -50%) rotate(90deg);
   }
 }
 
@@ -65,7 +65,7 @@
 .more-products__link-title {
   font-size: 16px;
   line-height: 20px;
-  color: #111;
+  color: #111111;
 
   @include tablet {
     width: 135px;
@@ -75,7 +75,7 @@
 
   &:hover .more-products__title {
     text-shadow: 2px -2px 17px #68b738;
-    transition: text-shadow .3s ease-in;
+    transition: text-shadow 0.3s ease-in;
   }
 }
 

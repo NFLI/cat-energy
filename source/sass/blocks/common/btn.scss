@@ -4,11 +4,10 @@
   align-items: center;
   min-height: 40px;
   min-width: 240px;
-  align-items: center;
   text-align: center;
   box-sizing: border-box;
   padding: 10px 20px;
-  color: #fff;
+  color: #ffffff;
   line-height: 20px;
   background-color: #68b738;
   font-weight: 400;
@@ -21,7 +20,7 @@
 
   &:active {
     background-color: $basic-green_2;
-    color:rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.3);
   }
 
   @include desktop {
@@ -37,7 +36,7 @@
     transition: 0.3s;
 
     &:hover {
-      background-color: #EBEBEB;
+      background-color: #ebebeb;
       color: $basic-green;
     }
 
@@ -123,4 +122,3 @@
     width: 568px;
   }
 }
-

@@ -27,7 +27,6 @@
     justify-content: space-between;
     gap: 80px;
   }
-
 }
 
 .extra-goods__heading {
@@ -37,27 +36,27 @@
   margin-bottom: 33px;
 
   & span {
-  display: inline-block;
-  padding: 0 20px;
-  background-color: #ffffff;
+    display: inline-block;
+    padding: 0 20px;
+    background-color: #ffffff;
 
-  @include tablet {
-    margin-left: 30px;
-    padding: 0 36px;
-  }
+    @include tablet {
+      margin-left: 30px;
+      padding: 0 36px;
+    }
 
-  @include desktop {
-    padding-left: 40px;
-    padding-right: 35px;
-    margin: 0 calc((100vw - 1300px)/2);
-  }
+    @include desktop {
+      padding-left: 40px;
+      padding-right: 35px;
+      margin: 0 calc((100vw - 1300px) / 2);
+    }
   }
 
   @include tablet {
     font-size: 36px;
     line-height: 36px;
     background-image: linear-gradient(to bottom, transparent 0, transparent 22px, $basic-green 22px, $basic-green 25px, transparent 25px, transparent 100%);
-    margin-bottom:  79px;
+    margin-bottom: 79px;
   }
 
   @include desktop {
@@ -118,7 +117,7 @@
   }
 
   @include desktop {
-    gap: 0px;
+    gap: 0;
   }
 }
 

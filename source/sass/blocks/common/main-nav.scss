@@ -5,16 +5,16 @@
   text-align: center;
 
   @include mdmobile {
-  .main-nav--opened & {
-    display: block;
-    animation-name: opacity;
-    animation-duration: 1.5s;
-    animation-iteration-count: 1;
-  }
+    .main-nav--opened & {
+      display: block;
+      animation-name: opacity;
+      animation-duration: 1.5s;
+      animation-iteration-count: 1;
+    }
 
-  .main-nav--nojs & {
-    display: block;
-  }
+    .main-nav--nojs & {
+      display: block;
+    }
   }
 
   @include tablet {
@@ -37,11 +37,11 @@
 }
 
 .main-nav__item {
-  border-bottom: 1px solid #E6E6E6;
+  border-bottom: 1px solid #e6e6e6;
 
   @include mdmobile {
     &:first-child {
-      border-top: 1px solid #E6E6E6;
+      border-top: 1px solid #e6e6e6;
     }
 
     &:last-child {
@@ -76,7 +76,7 @@
 
   &--active {
     @include tablet {
-    border-bottom: 2px solid $basic-green;
+      border-bottom: 2px solid $basic-green;
     }
   }
 
@@ -95,10 +95,9 @@
 
   .main-nav__list--index & {
     @include desktop {
-      color: white;
-
+      color: $white;
       &--active {
-        border-bottom-color: white;
+        border-bottom-color: $white;
       }
     }
   }

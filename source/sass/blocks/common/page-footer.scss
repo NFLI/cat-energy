@@ -1,11 +1,11 @@
 .page-footer {
-  background-color: #F2F2F2;
+  background-color: $basic-grey;
 }
-
 
 .page-footer__logo-link {
   cursor: pointer;
   transition: 0.3s;
+
   &:hover {
     opacity: 0.8;
   }
@@ -16,7 +16,7 @@
 
   & svg {
     display: block;
-    fill: #111;
+    fill: #111111;
   }
 }
 
@@ -43,4 +43,3 @@
     margin-right: 30px;
   }
 }
-

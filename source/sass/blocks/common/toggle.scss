@@ -13,41 +13,41 @@
   outline: none;
   cursor: pointer;
   transform-origin: 50% 50%;
-  transition: top .4s;
+  transition: top 0.4s;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 26px;
     height: 2px;
     background-color: $black;
     box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
-    transition: background-color .4s, box-shadow .4s;
+    transition: background-color 0.4s, box-shadow 0.4s;
   }
 
   .main-nav--opened & {
     top: 17px;
-    transition: top .2s;
+    transition: top 0.2s;
 
     &::before,
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       width: 26px;
       height: 1.5px;
       background-color: $black;
       box-shadow: none;
-      transition: background-color .4s;
+      transition: background-color 0.4s;
     }
 
     &::before {
       transform: rotate(45deg);
-      transition: transform .4s;
+      transition: transform 0.4s;
     }
 
     &::after {
       transform: rotate(-45deg);
-      transition: transform .4s;
+      transition: transform 0.4s;
     }
   }
 

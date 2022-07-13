@@ -53,11 +53,11 @@
   z-index: 0;
 
   &:first-child {
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   &:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   &::before {
@@ -80,33 +80,34 @@
   }
 
   &--icon-leaf::before {
-    background-image: url(../../../img/raster/advantage-leaf@1x.png);
+    background-image: url("../../../img/raster/advantage-leaf@1x.png");
 
     @include retina {
-    background-image: url(../../../img/raster/advantage-leaf@2x.png);
+      background-image: url("../../../img/raster/advantage-leaf@2x.png");
     }
   }
 
   &--icon-powder::before {
-    background-image: url(../../../img/raster/advantage-powder@1x.png);
+    background-image: url("../../../img/raster/advantage-powder@1x.png");
 
     @include retina {
-    background-image: url(../../../img/raster/advantage-powder@2x.png);
+      background-image: url("../../../img/raster/advantage-powder@2x.png");
     }
   }
 
   &--icon-cutlery::before {
-    background-image: url(../../../img/raster/advantage-dining@1x.png);
+    background-image: url("../../../img/raster/advantage-dining@1x.png");
 
     @include retina {
-      background-image: url(../../../img/raster/advantage-dining@2x.png);
+      background-image: url("../../../img/raster/advantage-dining@2x.png");
     }
   }
 
   &--icon-clock::before {
-    background-image: url(../../../img/raster/advantage-clock@1x.png);
+    background-image: url("../../../img/raster/advantage-clock@1x.png");
+
     @include retina {
-      background-image: url(../../../img/raster/advantage-clock@2x.png);
+      background-image: url("../../../img/raster/advantage-clock@2x.png");
     }
   }
 

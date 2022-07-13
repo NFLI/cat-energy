@@ -1,6 +1,6 @@
 .page-header {
   position: relative;
-  border-bottom: 1px solid #E6E6E6;
+  border-bottom: 1px solid #e6e6e6;
 
   &--index {
     border-bottom: none;
@@ -14,7 +14,6 @@
   @include desktop {
     &--index {
       z-index: 0;
-
       &::before {
         @include pseudo-element();
         position: absolute;
@@ -24,7 +23,7 @@
         right: 0;
         left: 50%;
         background-color: #63a73a;
-        background-image: url(../../../img/raster/index-background-desktop@1x.jpg);
+        background-image: url("../../../img/raster/index-background-desktop@1x.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         height: 695px;
@@ -32,7 +31,7 @@
         z-index: -1;
 
         @include retina {
-          background-image: url(../../../img/raster/index-background-desktop@2x.jpg);
+          background-image: url("../../../img/raster/index-background-desktop@2x.jpg");
         }
       }
     }
@@ -51,7 +50,6 @@
   @include desktop {
     padding-top: 53px;
   }
-
 }
 
 .page-header__logo {

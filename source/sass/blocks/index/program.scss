@@ -126,7 +126,7 @@
   &--slim::after {
     width: 72%;
     height: 100%;
-    background-image: url(../../../img/vector/icon-cat-slim.svg);
+    background-image: url("../../../img/vector/icon-cat-slim.svg");
     background-size: 36px;
     background-repeat: no-repeat;
 
@@ -145,7 +145,7 @@
   &--gain::after {
     width: 134%;
     height: 56%;
-    background-image: url(../../../img/vector/icon-cat-pro.svg);
+    background-image: url("../../../img/vector/icon-cat-pro.svg");
     background-size: 67px;
     background-repeat: no-repeat;
 
@@ -160,11 +160,11 @@
 }
 
 .program__description {
-  color: black;
+  color: $black;
   line-height: 1.31;
   padding-top: 22px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #D9D9D9;
+  border-bottom: 1px solid #d9d9d9;
   min-width: 227px;
 
   @include tablet {
@@ -178,7 +178,6 @@
     padding-top: 40px;
     padding-bottom: 25px;
   }
-
 }
 
 .program__link {
@@ -206,7 +205,7 @@
     transform: translateY(-50%);
     width: 24px;
     height: 11px;
-    background-image: url(../../../img/vector/icon-arrow.svg);
+    background-image: url("../../../img/vector/icon-arrow.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -220,7 +219,7 @@
 
   &:hover::after {
     right: -57px;
-    background-image: url(../../../img/vector/icon-hover-arrow.svg);
+    background-image: url("../../../img/vector/icon-hover-arrow.svg");
     width: 32px;
   }
 

@@ -1,6 +1,6 @@
 .page-footer__social {
-  border-top: 1px solid #D9D9D9;
-  border-bottom: 1px solid #D9D9D9;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
   width: 100%;
 
   @include tablet {
@@ -11,7 +11,6 @@
 
 .social__list {
   margin: 0;
-  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,7 +25,7 @@
 }
 
 .social__item-link svg {
-  fill: #666;
+  fill: #666666;
   transition: fill 0.3s;
 }
 

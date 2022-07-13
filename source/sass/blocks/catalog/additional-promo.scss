@@ -39,10 +39,10 @@
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: white;
+  color: $white;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     background-image: url("../../../img/vector/icon-gift.svg");
     background-repeat: no-repeat;

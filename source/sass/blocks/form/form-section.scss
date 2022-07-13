@@ -7,7 +7,7 @@
   text-transform: uppercase;
 
   @include tablet {
-    margin: 54px 0px 45px 40px;
+    margin: 54px 0 45px 40px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -56,7 +56,7 @@
   line-height: 20px;
   font-weight: 300;
   text-transform: uppercase;
-  color: #222;
+  color: #222222;
 
   @include tablet {
     min-height: 40px;
@@ -88,7 +88,7 @@
   line-height: 18px;
   color: $text-color;
   text-transform: uppercase;
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
   outline: 0;
   transition: 0.3s;
 
@@ -96,7 +96,6 @@
     flex: 1 0 150px;
     height: 52px;
     line-height: 1.5;
-    padding: 10px 20px;
     font-size: 20px;
     padding: 10px 0 10px 20px;
   }
@@ -118,13 +117,13 @@
   margin: 0 -20px;
   margin-top: 12px;
   padding: 20px;
-  border-top: 1px solid #E7E7E7;
-  border-bottom: 1px solid #E7E7E7;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
 
   @include tablet {
-    margin: 50px 40px 0px 40px;
+    margin: 50px 40px 0 40px;
     padding: 28px;
-    border: 1px solid #E7E7E7;
+    border: 1px solid #e7e7e7;
   }
 
   @include desktop {
@@ -189,7 +188,7 @@
 
 .form-section__label-text--radio {
   &::before {
-    @include pseudo-element('', absolute, inline-block);
+    @include pseudo-element("", absolute, inline-block);
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -217,8 +216,8 @@
   }
 }
 
-.form-section__radio:checked+.form-section__label-text--radio::after {
-  @include pseudo-element('', absolute, inline-block);
+.form-section__radio:checked + .form-section__label-text--radio::after {
+  @include pseudo-element("", absolute, inline-block);
   width: 13.5px;
   height: 13.5px;
   border-radius: 50%;
@@ -235,7 +234,7 @@
 
 .form-section__label-text--checkbox {
   &::before {
-    @include pseudo-element('', absolute, inline-block);
+    @include pseudo-element("", absolute, inline-block);
     width: 30px;
     height: 30px;
     border: 1px solid $special-grey;
@@ -267,7 +266,7 @@
 }
 
 .form-section__title {
-  margin:  26px 0px 35px 0px;
+  margin: 26px 0 35px 0;
   font-size: 24px;
   line-height: 24px;
   background-image: linear-gradient(to bottom, transparent 0, transparent 13px, $basic-green 13px, $basic-green 16px, transparent 16px, transparent 100%);
@@ -291,7 +290,7 @@
     }
 
     @include desktop {
-      margin: 0 calc((100vw - 1300px)/2);
+      margin: 0 calc((100vw - 1300px) / 2);
       padding: 0 40px;
     }
 
@@ -299,7 +298,7 @@
   }
 
   @include tablet {
-    margin: 70px 0px 75px 0px;
+    margin: 70px 0 75px 0;
     font-size: 36px;
     line-height: 36px;
     background-image: linear-gradient(to bottom, transparent 0, transparent 22px, $basic-green 22px, $basic-green 25px, transparent 25px, transparent 100%);
@@ -319,7 +318,7 @@
   }
 
   @include desktop {
-    margin: 49px 0px 54px 0px;
+    margin: 49px 0 54px 0;
 
     &--extra {
       margin-bottom: 57px;
@@ -349,8 +348,8 @@
     right: 20px;
   }
 
-  .form-section__input:active+&,
-  .form-section__input:focus+& {
+  .form-section__input:active + &,
+  .form-section__input:focus + & {
     fill: $basic-green;
   }
 
