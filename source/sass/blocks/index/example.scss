@@ -183,6 +183,7 @@
   align-items: center;
   margin-top: 35px;
   padding-bottom: 34px;
+  overflow: hidden;
 
   @include tablet {
     margin: 0 -30px;
@@ -266,8 +267,8 @@
     }
 
     &--after {
-      box-shadow: 100px 290px 0 100px #eaeaea;
-      background-image: linear-gradient(#ffffff 0, #ffffff 190px, #eaeaea 190px, #eaeaea 100%);
+      box-shadow: 400px 590px 0 400px #eaeaea;
+      background-image: linear-gradient(#fff 0,#fff 190px,#eaeaea 190px,#eaeaea 100%);
       right: 2px;
     }
   }
@@ -284,6 +285,16 @@
   @include desktop {
     width: 690px;
   }
+}
+
+.slider__before:checked ~ .slider__images .slider__image--before,
+.slider__after:checked ~ .slider__images .slider__image--after {
+  width: 100%;
+}
+
+.slider__before:checked ~ .slider__images .slider__image--after,
+.slider__after:checked ~ .slider__images .slider__image--before {
+  width: 0;
 }
 
 .slider__actions {
@@ -308,8 +319,18 @@
   font-size: 16px;
   line-height: 20px;
   color: $black;
+  cursor: pointer;
   text-transform: uppercase;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.24);
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @include tablet {
     font-size: 20px;
@@ -324,16 +345,22 @@
   justify-content: flex-start;
 }
 
-.slider__range-container .slider__range {
+.slider__range {
   display: flex;
   align-items: center;
-  -webkit-appearance: none;
+  appearance:  none;
   width: 86px;
   height: 14px;
   background-color: $white;
   border: 1px solid $special-grey;
   border-radius: 6px;
   padding: 4px 6px;
+
+  &::-moz-range-thumb {
+    width: 0;
+    height: 0;
+    border: none;
+  }
 
   @include tablet {
     width: 428px;
@@ -357,6 +384,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-100%, -50%);
+  cursor: pointer;
   width: 35px;
   height: 6px;
   background-color: $basic-green;
@@ -381,6 +409,11 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+
+    &:focus,
+    &:active {
+      border-color: $basic-green;
     }
   }
 }

@@ -4,18 +4,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Cat-Energy - Интернет-магазин фитнес питания для котов">
+  <meta name="keywords" content="cat-energy htmlacademy-catenergy">
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="shortcut icon" href="favicon-main.ico" type="image/x-icon">
+  <link rel="preload" href="css/styles.min.css"  as="style" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.min.css">
 </head>
 
 <body class="page-body">
   <header class="page-header page-header--index">
     <div class="container page-header__wrapper">
-      <a class="page-header__logo">
+      <a class="page-header__logo" tabindex="0" aria-label="Логотип Cat-Energy">
         <picture>
           <source media="(min-width: 1300px)" srcset="img/vector/logo-desktop.svg" />
           <source media="(min-width: 768px)" srcset="img/vector/logo-tablet.svg" />
@@ -28,7 +31,7 @@
         </svg>
       </a>
       <nav class="main-nav main-nav--nojs">
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle" type="button" aria-label="Кнопка Меню">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list main-nav__list--index">
@@ -56,7 +59,7 @@
           <picture class="offer__image-wrapper">
             <source media="(min-width: 1300px)" srcset="
                   img/raster/index-can-desktop@1x.png,
-                  img/raster/index-can-tablet@2x.png  2x
+                  img/raster/index-can-desktop@2x.png  2x
                 " />
             <source media="(min-width: 768px)" srcset="
                   img/raster/index-can-tablet@1x.jpg,
@@ -161,6 +164,9 @@
           <div class="slider__images">
             <div class="slider__image slider__image--before">
               <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/webp/before-desktop@1x.webp, img/webp/before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/before-tablet@1x.webp, img/webp/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/webp/before-mobile@1x.webp, img/webp/before-mobile@2x.webp 2x">
                 <source media="(min-width: 1300px)" srcset="
                       img/raster/before-desktop@1x.png,
                       img/raster/before-desktop@2x.png 2x
@@ -176,6 +182,9 @@
             </div>
             <div class="slider__image slider__image--after">
               <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/webp/after-desktop@1x.webp, img/webp/after-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/after-tablet@1x.webp, img/webp/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/webp/after-mobile@1x.webp, img/webp/after-mobile@2x.webp 2x">
                 <source media="(min-width: 1300px)" srcset="
                       img/raster/after-desktop@1x.png,
                       img/raster/after-desktop@2x.png 2x
@@ -191,12 +200,12 @@
             </div>
           </div>
           <div class="slider__actions">
-            <label for="before" class="slider__btn slider__btn--before">Было</label>
+            <label for="before" class="slider__btn slider__btn--before" tabindex="0">Было</label>
             <div class="slider__range-container">
-              <input class="slider__range" type="range" min="0" max="100" />
+              <input class="slider__range" id="slider__range" type="range" min="0" max="100" aria-label="Сравнить"/>
               <div class="slider__thumb"></div>
             </div>
-            <label class="slider__btn slider__btn--after" for="after">Стало</label>
+            <label class="slider__btn slider__btn--after" for="after" tabindex="0">Стало</label>
           </div>
         </div>
       </div>
@@ -220,7 +229,7 @@
     </section>
     <section class="container page-footer__info page-footer__wrapper">
       <div class="page-footer__logo">
-        <a class="page-footer__logo-link" href="#">
+        <a class="page-footer__logo-link" href="#" aria-label="Логотип Cat-Energy">
           <svg xmlns="http://www.w3.org/2000/svg" height="24" width="128" aria-label="Cat Energy">
             <use xlink:href="img/vector/sprite.svg#logo-footer"></use>
           </svg>
@@ -267,8 +276,9 @@
   </footer>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNzk22YYzqhtw8S_rcrO4sn7Gbc70_j-M&callback=initMap"
     async defer="defer"></script>
-  <script src="js/menu.js"></script>
-  <script src="js/map.js"></script>
+  <script src="js/slider.min.js"></script>
+  <script src="js/menu.min.js"></script>
+  <script src="js/map.min.js"></script>
 </body>
 
 </html>
