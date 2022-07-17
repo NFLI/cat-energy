@@ -12,6 +12,50 @@
   font-display: swap;
   src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
 }
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
 html,
 body {
   min-width: 320px;
@@ -441,6 +485,10 @@ html {
   margin-top: 27px;
   font-size: 36px;
   line-height: 36px;
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
 }
 @media (min-width: 768px) {
   .page-main__title {
@@ -978,6 +1026,12 @@ html {
   }
 }
 
+.offer__content {
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft;
+  -webkit-animation-duration: 1.6s;
+          animation-duration: 1.6s;
+}
 @media (min-width: 768px) {
   .offer__content {
     margin-left: 87px;
@@ -1058,6 +1112,10 @@ html {
   margin: 0 auto;
   width: 280px;
   height: 270px;
+  -webkit-animation-name: fadeInRight;
+          animation-name: fadeInRight;
+  -webkit-animation-duration: 1.6s;
+          animation-duration: 1.6s;
 }
 @media (min-width: 768px) {
   .offer__img {
